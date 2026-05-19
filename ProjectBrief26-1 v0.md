@@ -39,9 +39,9 @@
 |35|[EWIN](#team-35)| 자기주도 학습을 하는 대학생을 위한, 강의자료 기반 개인 맞춤형 소크라테스식 질문을 생성하여 사고의 확장을 유도하는 AI 튜터링 서비스
 |36|[이게되네](#team-36)|  무발화 자폐 아동의 의사표현 어려움 해소를 위한 AI 기반 개인맞춤형 의사소통 어플리케이션 <br>- 단어 확장, 이미지 생성, 음성 출력, 데이터 분석을 통해 문장 생성 및 표현을 지원하는 서비스
 |37|[Optimus Prime](#team-37)| VM별 AI 워크로드 에너지 사용량 예측모델 설계
-|38|[ModalArc](#team-38)| 온디바이스 환경에서 멀티모달 모델을 효율적으로 추론하기 위한 가속기 제안
-|39|[NexStep](#team-39)| 쑥쑥 : 음소 단위 분석을 통한 아동 맞춤형 발음 교정 놀이 앱
-|40|[MIND](#team-40)| 발 및 발목 엑스레이 영상의 응급도 분류 및 판독 우선순위 결정을 위한 멀티모달 인공지능 모델 개발
+|38|[ModalArc](#team-38)| MARS: Modality-Aware Reconfiguration Scheduler for On-device Multi-Modal Inference on Multi-Core NPUs
+|39|[NexStep](#team-39)| 음소 단위 분석을 통한 아동 맞춤형 발음 교정 놀이 앱
+|40|[MIND](#team-40)| 발 및 발목 엑스레이 영상의 응급도 분류 및 판독 우선순위 결정을 위한 인공지능 모델 개발
 |41|[Flippers](#team-41)| OpenAI 및 Google Map API 기반 사용자 맞춤형 AI 여행 플래너 솔루션
  
 [Return TOP](#list-of-teamsprojects)
@@ -632,14 +632,14 @@
 [Return TOP](#list-of-teamsprojects)
  
 # Team-40
-| (1) 과제명 |  발 및 발목 엑스레이 영상의 응급도 분류 및 판독 우선순위 결정을 위한 멀티모달 인공지능 모델 개발 |
+| (1) 과제명 |  발 및 발목 엑스레이 영상의 응급도 분류 및 판독 우선순위 결정을 위한 인공지능 모델 개발 |
 |:---  |---  |
 | (2) 팀 번호/이름 | 40-MIND |
-| (3) 구성원 | 김가영(2276031): 리더, 멀티모달 AI 모델 설계 담당 <br> 한승연(2276346): 팀원, 모델 학습 및 파인튜닝 담당 <br> 박지호(2176160): 팀원, 데이터 엔지니어링 담당 |
+| (3) 구성원 | 김가영(2276031): 리더, AI 모델 설계 담당 <br> 한승연(2276346): 팀원, 모델 학습 및 파인튜닝 담당 <br> 박지호(2176160): 팀원, 데이터 엔지니어링 담당 |
 | (4) 지도교수 | 황의원 교수 |
 | (5) 트랙  | 연구 |
-| (6) 과제 키워드 | Foot & Ankle X-ray, Triage System, Multimodal Learning, Multi-view Learning, Domain Adaptation, Radiology Workflow Optimization |
-| (7) 과제 내용 요약 |	1. 연구 배경 및 필요성 <br> • 복잡한 구조: 발/발목은 26개의 뼈가 중첩되어 단순 X-ray로 미세 손상 식별이 어려움 <br>• 의료 현장 한계: 응급실 내 높은 외상 빈도 대비 전문의 부족으로 인한 판독 오류 위험 <br>• 도메인 차이: 기존 연구의 공개 데이터와 실제 임상 환경(비만, 석고 등) 간의 간극 존재 <br> <br>2. 해결 방법 (Proposed Solutions) <br>• Domain Adaptation: 공개 데이터 학습 후 병원 데이터 Fine-tuning으로 도메인 갭 최소화 <br>• Multi-view Learning: 동일 환자의 다양한 View(AP, Lateral 등) 활용 및 일관성 학습 <br>• Multimodal AI: 영상 정보와 임상 메타데이터(연령, 성별 등)를 결합하여 정교한 예측 <br>• AI Triage 시스템: 긴급도 점수 기반 워크리스트 자동 재정렬로 판독 효율성 극대화 <br> <br>3. 연구 단계 및 계획 <br>• 데이터: FracAtlas, AI Hub, LERA 등 공개 데이터 및 병원 데이터 확보 <br>• 모델: IRB 승인 후 Domain Adaptation 및 Multi-view 학습 단계적 진행 <br>• 평가: AUC, F1-score 검증 및 FIFO 대비 AI Triage 효율성 시뮬레이션 <br> <br>🛠 Tech Stack <br>• Language: Python <br>• Model: CNN-based Multimodal AI (Transfer Learning, Domain Adaptation) <br>• Dataset: Public (FracAtlas, AI Hub, LERA, Kaggle) & Hospital Dataset |
+| (6) 과제 키워드 | Foot & Ankle X-ray, Triage System, Multi-view Learning, Domain Adaptation, Radiology Workflow Optimization |
+| (7) 과제 내용 요약 |	1. 연구 배경 및 필요성 <br> • 복잡한 구조: 발/발목은 26개의 뼈가 중첩되어 단순 X-ray로 미세 손상 식별이 어려움 <br>• 의료 현장 한계: 응급실 내 높은 외상 빈도 대비 전문의 부족으로 인한 판독 오류 위험 <br>• 도메인 차이: 기존 연구의 공개 데이터와 실제 임상 환경(비만, 석고 등) 간의 간극 존재 <br> <br>2. 해결 방법 (Proposed Solutions) <br>• Domain Adaptation: 공개 데이터 학습 후 병원 데이터 Fine-tuning으로 도메인 갭 최소화 <br>• Multi-view Learning: 동일 환자의 다양한 View(AP, Lateral 등) 활용 및 일관성 학습 <br>• AI Triage 시스템: 긴급도 점수 기반 워크리스트 자동 재정렬로 판독 효율성 극대화 <br> <br>3. 연구 단계 및 계획 <br>• 데이터: FracAtlas, AI Hub, LERA 등 공개 데이터 및 병원 데이터 확보 <br>• 모델: IRB 승인 후 Domain Adaptation 및 Multi-view 학습 단계적 진행 <br>• 평가: AUC, F1-score 검증 및 FIFO 대비 AI Triage 효율성 시뮬레이션 <br> <br>🛠 Tech Stack <br>• Language: Python <br>• Model: CNN-based AI (Transfer Learning, Domain Adaptation) <br>• Dataset: Public (FracAtlas, AI Hub, LERA, Kaggle) & Hospital Dataset |
 | (8) 주요 Link | Github Repository: https://github.com/mind-ewha/capstone-design |
  
 <br>
